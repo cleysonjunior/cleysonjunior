@@ -2,7 +2,7 @@
 
 **Coordenador de TI e desenvolvedor.** Chapecó/SC — remoto ou presencial na região.
 
-Sete anos de TI, cinco deles na mesma empresa com progressão de analista a coordenador. Hoje construo produtos próprios na [CJS Infotech](https://www.cjsinfotech.com.br): sistemas que rodam em produção, com cliente pagando e telefone tocando quando quebra.
+Sete anos de TI, cinco deles na mesma empresa com progressão de analista a coordenador. Desde 2021, em paralelo, construo produtos próprios na [CJS Infotech](https://www.cjsinfotech.com.br): sistemas que rodam em produção, com cliente pagando e telefone tocando quando quebra.
 
 ---
 
@@ -20,14 +20,20 @@ Tudo em servidor próprio que eu administro: Linux, MariaDB, Docker, Cloudflare,
 
 ### O que fiz antes
 
-**Coordenador de TI** · ACB Revenda Ambev · 2026
+**Coordenador de TI** · ACB Revenda Ambev · mar/2026–jul/2026
 TI de 5 unidades em SC e PR, equipe de 3 técnicos, 500+ usuários e 500+ chamados/mês sob SLA. Proxmox com backup diário de 10+ VMs (Linux, Windows, VMware, Hyper-V). Deploy de máquina caiu de **2h para 30 min** com MDT/Windows ADK. Servidor local de IA rodando LLMs open-source para manter dado confidencial dentro da rede. Renegociação de telecom com **~15% de redução** no custo mensal.
 
-**Desenvolvedor — RPA e Dados** · ACB Revenda Ambev · 2025–2026
+**Desenvolvedor — RPA e Dados** · ACB Revenda Ambev · jan/2025–mar/2026
 Robô em Python/Selenium/PyAutoGUI para sistema legado sem HTML legível (IE Mode): lançamento de **2 minutos para 12 segundos**, em ~1.000 transações/dia — 8h de trabalho manual viraram 2h autônomas. Data Lake, Power Automate, 20+ relatórios em Power BI.
 
-**Analista de TI** · ACB Revenda Ambev · 2021–2025
-Suporte N1/N2/N3, redes UniFi, firewall, Active Directory.
+**Analista de TI** · ACB Revenda Ambev · jul/2021–jan/2025
+Suporte N1/N2/N3 a 500+ usuários locais e remotos, 500+ chamados/mês sob SLA. Rede corporativa: switches gerenciáveis UniFi, monitoramento de links, regras de firewall. Acessos e GPOs no Active Directory, projetos de expansão de unidades.
+
+**Assistente de TI** · Cooperativa Rede Sul · nov/2020–mai/2021
+Service Desk N1 e manutenção preventiva e corretiva do parque. Reestruturação do cabeamento estruturado da LAN.
+
+**Assistente de Suporte de TI** · Ases Express · mar/2019–ago/2020
+Suporte a 100+ agências parceiras credenciadas. Monitoramento e processamento automatizado de arquivos EDI entre matriz e agências.
 
 ---
 
