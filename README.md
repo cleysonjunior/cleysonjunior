@@ -10,11 +10,24 @@ Sete anos de TI, cinco deles na mesma empresa com progressão de analista a coor
 
 | | |
 |---|---|
-| **CJS Track** | Gestão de frota com rastreamento GPS. Mostra o que rastreador comum não mostra: quanto sobrou de cada viagem, já descontando combustível, pedágio e manutenção. PHP 8.4 + React, integrado ao Traccar. |
-| **Chatbot de IA no WhatsApp** | Atendimento que entende texto, áudio e foto, cota preço do catálogo real do distribuidor e passa para humano na hora certa. Roda com múltiplos provedores de LLM e nunca inventa valor — o número vem da fonte. |
+| **CJS Track** | Gestão de frota com rastreamento GPS. Mostra o que rastreador comum não mostra: quanto sobrou de cada viagem, já descontando combustível, pedágio e manutenção. PHP 8.4 + React, integrado ao Traccar. **Em produção, com assinatura recorrente ativa** — cadastro self-service, cobrança e liberação automáticas. |
+| **Chatbot de IA no WhatsApp** | Atendimento que entende texto, áudio e foto, cota preço do catálogo real do distribuidor e passa para humano na hora certa. Fila de provedores de LLM com queda automática, e **nunca inventa valor** — o preço é calculado no servidor, a IA só conversa. |
 | **Conecta Saúde** | Sistema para clínicas: captação, pré-agendamento e clube de fidelidade por assinatura. No ar em Campo Grande/MS. |
 
 Tudo em servidor próprio que eu administro: Linux, MariaDB, Docker, Cloudflare, backup off-site testado.
+
+---
+
+### Como eu trabalho
+
+Produto pequeno não é desculpa para engenharia frouxa. O que está no ar aqui tem:
+
+- **700+ testes automatizados**, rodados antes e depois de cada mudança. Boa parte deles existe para travar a lição de um incidente — *"modelo descontinuado não volta para a fila de fallback"*, *"áudio nunca vai para um modelo que não recebe áudio"*.
+- **Backup off-site com restauração provada**, não presumida: cópia diária para object storage e um teste de restauração todo mês.
+- **Vigia de 19 rotinas automáticas**: cada uma bate ponto só quando termina bem, e o que não bateu vira alerta no WhatsApp. Mais um vigia separado só para erro fatal — o heartbeat pega a queda permanente, não a intermitente.
+- **Observabilidade e segurança**: rastreamento de erro no servidor e no front, TLS e WAF na frente, fail2ban, auditoria de permissões e de credenciais.
+- **Medir antes de otimizar.** A análise de IA do painel levava 49s porque tentava três provedores mortos antes do que funcionava; reordenada com base na medição, passou a 3s.
+- **Toda decisão não-óbvia fica escrita no código**, junto com o incidente que a motivou. Quem chegar depois — inclusive eu, seis meses depois — não precisa redescobrir do zero.
 
 ---
 
