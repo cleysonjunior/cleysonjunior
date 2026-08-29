@@ -10,6 +10,9 @@
 # e localizacao entram na busca do GitHub; a bio e o que aparece no resultado.
 set -euo pipefail
 
+# O campo `blog` aponta para cleyson.me, nao mais para o site da empresa: numa
+# busca de emprego quem clica quer VOCE, nao o produto. A pagina esta no ar com
+# HTTPS desde 29/08/2026 e espelha o README deste perfil.
 BIO='Coordenador de TI e dev full-stack. Construo SaaS que roda em produção: gestão de frota com GPS e chatbots de IA no WhatsApp.'
 
 # gh auth status escreve em stderr, nao em stdout — testar pela saida faz o
@@ -25,7 +28,7 @@ gh api -X PATCH /user \
   -f name='Cleyson Júnior Studzinski' \
   -f bio="$BIO" \
   -f location='Chapecó, SC — Brasil' \
-  -f blog='https://www.cjsinfotech.com.br' \
+  -f blog='https://cleyson.me' \
   -f company='CJS Infotech' \
   -F hireable=true > /dev/null
 
