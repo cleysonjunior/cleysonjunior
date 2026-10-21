@@ -8,13 +8,23 @@ Sete anos de TI, cinco deles na mesma empresa com progressão de analista a coor
 
 ### O que estou construindo
 
+Mais de 10 sistemas próprios em produção na CJS Infotech, todos pensados para vender a mais de um cliente (marca e dados em configuração, código único).
+
 | | |
 |---|---|
-| **CJS Track** | Gestão de frota com rastreamento GPS. Mostra o que rastreador comum não mostra: quanto sobrou de cada viagem, já descontando combustível, pedágio e manutenção. PHP 8.4 + React, integrado ao Traccar. **Em produção, com assinatura recorrente ativa** — cadastro self-service, cobrança e liberação automáticas. |
-| **Chatbot de IA no WhatsApp** | Atendimento que entende texto, áudio e foto, cota preço do catálogo real do distribuidor e passa para humano na hora certa. Fila de provedores de LLM com queda automática, e **nunca inventa valor** — o preço é calculado no servidor, a IA só conversa. |
+| **CJS Track** | Gestão de frota com rastreamento GPS. Mostra o que rastreador comum não mostra: quanto sobrou de cada frete, já descontando combustível, pedágio e manutenção. PHP 8.4 + React, integrado ao Traccar. **Em produção, com assinatura recorrente ativa**: cadastro self-service, cobrança e liberação automáticas. |
+| **Robô de vendas no WhatsApp** | Entende texto, áudio, foto e PDF, cota peça no catálogo real do fornecedor com a margem certa e cobra o Pix. Fila de provedores de LLM com queda automática, e **nunca inventa valor**: o preço é calculado no servidor, a IA só conversa. Aprende com as conversas toda madrugada. |
+| **CJS Atendimento** | Painel de atendimento de WhatsApp multi-empresa: robô e humano na mesma tela, notificação no celular, sincronização depois de queda. |
+| **Loja online da Stofer** | E-commerce integrado ao ERP TopSystem por API REST (6.223 produtos com preço e estoque da tabela de e-commerce). Pix direto pela API do Sicoob (mTLS) em homologação. |
+| **Loja CJS** | 7.417 produtos sincronizados diariamente de distribuidores, preço pela margem, antifraude no cartão. |
+| **CJS OS e Agenda** | Ordem de serviço de balcão multi-loja (senha do aparelho cifrada, aprovação de orçamento pelo WhatsApp) e agenda online para salão e barbearia. |
+| **Wi-Fi pago no caminhão** | Hotspot MikroTik com túnel WireGuard até o servidor, cobrança por Pix e painel próprio. |
+| **Lojas com montador 3D** | A cliente monta a caixa de presente em 3D: tema (64), cor, presentes e frase. Pedido e aceite dos termos gravados no servidor. |
 | **Conecta Saúde** | Sistema para clínicas: captação, pré-agendamento e clube de fidelidade por assinatura. No ar em Campo Grande/MS. |
 
-Tudo em servidor próprio que eu administro: Linux, MariaDB, Docker, Cloudflare, backup off-site testado.
+Sites entregues: [stofer.com.br](https://stofer.com.br) · [oticaberlim.com.br](https://oticaberlim.com.br) · [paolastudzinski.me](https://paolastudzinski.me) · [cjsinfotech.com.br](https://www.cjsinfotech.com.br)
+
+Tudo em servidor próprio que eu administro: migrei a produção da AWS para a DigitalOcean, Cloudflare na frente com a origem fechada para o resto, Linux, MariaDB, Docker, backup off-site testado.
 
 ---
 
@@ -22,7 +32,7 @@ Tudo em servidor próprio que eu administro: Linux, MariaDB, Docker, Cloudflare,
 
 Produto pequeno não é desculpa para engenharia frouxa. O que está no ar aqui tem:
 
-- **700+ testes automatizados**, rodados antes e depois de cada mudança. Boa parte deles existe para travar a lição de um incidente — *"modelo descontinuado não volta para a fila de fallback"*, *"áudio nunca vai para um modelo que não recebe áudio"*.
+- **1.463 testes automatizados** só no CJS Track, rodados antes e depois de cada mudança. Boa parte deles existe para travar a lição de um incidente — *"modelo descontinuado não volta para a fila de fallback"*, *"áudio nunca vai para um modelo que não recebe áudio"*.
 - **Backup off-site com restauração provada**, não presumida: cópia diária para object storage e um teste de restauração todo mês.
 - **Vigia de 19 rotinas automáticas**: cada uma bate ponto só quando termina bem, e o que não bateu vira alerta no WhatsApp. Mais um vigia separado só para erro fatal — o heartbeat pega a queda permanente, não a intermitente.
 - **Observabilidade e segurança**: rastreamento de erro no servidor e no front, TLS e WAF na frente, fail2ban, auditoria de permissões e de credenciais.
@@ -52,7 +62,7 @@ Suporte a 100+ agências parceiras credenciadas. Monitoramento e processamento a
 
 ### Stack
 
-`PHP` `Python` `JavaScript` `React` `Next.js` `Laravel` `MariaDB/MySQL` `Linux` `Docker` `Proxmox` `Active Directory` `Power BI` `Selenium` `APIs REST` `LLMs em produção`
+`PHP` `Python` `JavaScript` `React` `Next.js` `Laravel` `MariaDB/MySQL` `Linux` `Docker` `Cloudflare` `DigitalOcean` `MikroTik` `WireGuard` `Proxmox` `Active Directory` `Power BI` `Selenium` `APIs REST` `LLMs em produção`
 
 ### Formação
 
