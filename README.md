@@ -66,7 +66,7 @@ Suporte a 100+ agências parceiras credenciadas. Monitoramento e processamento a
 
 ### Formação
 
-Engenharia de Computação (cursando, 2023–2027) · Técnico em Manutenção de Computadores · Certificações em IA aplicada, cibersegurança, tuning de banco e cloud.
+Engenharia da Computação (2023–2026, Centro Universitário União das Américas Descomplica): **aprovado nas 38 disciplinas obrigatórias** (2.640 h), falta só concluir as atividades complementares · Técnico em Manutenção de Computadores · Certificações em IA aplicada, cibersegurança, tuning de banco e cloud.
 
 ---
 
