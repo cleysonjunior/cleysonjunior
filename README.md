@@ -22,7 +22,7 @@ Mais de 10 sistemas próprios em produção na CJS Infotech, todos pensados para
 | **Lojas com montador 3D** | A cliente monta a caixa de presente em 3D: tema (64), cor, presentes e frase. Pedido e aceite dos termos gravados no servidor. |
 | **Conecta Saúde** | Sistema para clínicas: captação, pré-agendamento e clube de fidelidade por assinatura. No ar em Campo Grande/MS. |
 
-Sites entregues: [stofer.com.br](https://stofer.com.br) · [oticaberlim.com.br](https://oticaberlim.com.br) · [paolastudzinski.me](https://paolastudzinski.me) · [cjsinfotech.com.br](https://www.cjsinfotech.com.br)
+Sites entregues: [stofer.com.br](https://stofer.com.br) · [oticaberlim.com.br](https://oticaberlim.com.br) · [cjsinfotech.com.br](https://www.cjsinfotech.com.br)
 
 Tudo em servidor próprio que eu administro: migrei a produção da AWS para a DigitalOcean, Cloudflare na frente com a origem fechada para o resto, Linux, MariaDB, Docker, backup off-site testado.
 
